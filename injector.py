@@ -5,7 +5,7 @@ import os
 import subprocess
 
 ## When The Art Become A Weapon ##
-__author__  = "The Architect"
+__author__  = "0v3rl0w"
 __version__ = "1.0"
 ##################################
 
