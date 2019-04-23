@@ -19,7 +19,7 @@ checksum = checkdata.read().decode("utf-8")[:-1]
 if(checksum != sha512(data).hexdigest()):
     exit()
 
-user = data.decode("utf-8")[:-1].split('_')
+user = data.decode("utf-8")[:-1].split('\n')
 
 if getuser() in user:
     try:
